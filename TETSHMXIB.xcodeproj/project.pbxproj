@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE9345741CA3CA0500DFD341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9345731CA3CA0500DFD341 /* main.m */; };
+		AE9345771CA3CA0500DFD341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9345761CA3CA0500DFD341 /* AppDelegate.m */; };
+		AE93457F1CA3CA0500DFD341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE93457E1CA3CA0500DFD341 /* Assets.xcassets */; };
+		AE9345911CA3DB5500DFD341 /* AKTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9345901CA3DB5500DFD341 /* AKTimerLabel.m */; };
+		AE9345941CA3E18400DFD341 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9345921CA3E18400DFD341 /* MainView.xib */; };
+		AE93459A1CA3E69500DFD341 /* ExamleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9345981CA3E69500DFD341 /* ExamleView.xib */; };
+		AE93459D1CA3E6CD00DFD341 /* AKExempleController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE93459C1CA3E6CD00DFD341 /* AKExempleController.m */; };
+		AE9345AE1CA402EF00DFD341 /* AKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9345AD1CA402EF00DFD341 /* AKTimer.m */; };
+		AE9345B11CA462F400DFD341 /* AKAdditionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9345B01CA462F400DFD341 /* AKAdditionButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE93456F1CA3CA0500DFD341 /* ak timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ak timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9345731CA3CA0500DFD341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE9345751CA3CA0500DFD341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE9345761CA3CA0500DFD341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE93457E1CA3CA0500DFD341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9345831CA3CA0500DFD341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE93458F1CA3DB5500DFD341 /* AKTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKTimerLabel.h; path = TimerLabel/AKTimerLabel.h; sourceTree = "<group>"; };
+		AE9345901CA3DB5500DFD341 /* AKTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKTimerLabel.m; path = TimerLabel/AKTimerLabel.m; sourceTree = "<group>"; };
+		AE9345931CA3E18400DFD341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainView.xib; sourceTree = "<group>"; };
+		AE9345991CA3E69500DFD341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ExamleView.xib; sourceTree = "<group>"; };
+		AE93459B1CA3E6CD00DFD341 /* AKExempleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKExempleController.h; path = Controllers/AKExempleController.h; sourceTree = "<group>"; };
+		AE93459C1CA3E6CD00DFD341 /* AKExempleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKExempleController.m; path = Controllers/AKExempleController.m; sourceTree = "<group>"; };
+		AE9345AC1CA402EF00DFD341 /* AKTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKTimer.h; path = TimerLabel/AKTimer.h; sourceTree = "<group>"; };
+		AE9345AD1CA402EF00DFD341 /* AKTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKTimer.m; path = TimerLabel/AKTimer.m; sourceTree = "<group>"; };
+		AE9345AF1CA462F400DFD341 /* AKAdditionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKAdditionButton.h; path = TimerLabel/AKAdditionButton.h; sourceTree = "<group>"; };
+		AE9345B01CA462F400DFD341 /* AKAdditionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKAdditionButton.m; path = TimerLabel/AKAdditionButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE93456C1CA3CA0500DFD341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE9345661CA3CA0500DFD341 = {
+			isa = PBXGroup;
+			children = (
+				AE9345B21CA466CA00DFD341 /* Model */,
+				AE9345891CA3CA1200DFD341 /* CustomeView */,
+				AE9345711CA3CA0500DFD341 /* TETSHMXIB */,
+				AE9345701CA3CA0500DFD341 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE9345701CA3CA0500DFD341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE93456F1CA3CA0500DFD341 /* ak timer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9345711CA3CA0500DFD341 /* TETSHMXIB */ = {
+			isa = PBXGroup;
+			children = (
+				AE9345751CA3CA0500DFD341 /* AppDelegate.h */,
+				AE9345761CA3CA0500DFD341 /* AppDelegate.m */,
+				AE93459B1CA3E6CD00DFD341 /* AKExempleController.h */,
+				AE93459C1CA3E6CD00DFD341 /* AKExempleController.m */,
+				AE9345981CA3E69500DFD341 /* ExamleView.xib */,
+				AE9345921CA3E18400DFD341 /* MainView.xib */,
+				AE93457E1CA3CA0500DFD341 /* Assets.xcassets */,
+				AE9345831CA3CA0500DFD341 /* Info.plist */,
+				AE9345721CA3CA0500DFD341 /* Supporting Files */,
+			);
+			path = TETSHMXIB;
+			sourceTree = "<group>";
+		};
+		AE9345721CA3CA0500DFD341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9345731CA3CA0500DFD341 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE9345891CA3CA1200DFD341 /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				AE9345AF1CA462F400DFD341 /* AKAdditionButton.h */,
+				AE9345B01CA462F400DFD341 /* AKAdditionButton.m */,
+				AE93458F1CA3DB5500DFD341 /* AKTimerLabel.h */,
+				AE9345901CA3DB5500DFD341 /* AKTimerLabel.m */,
+			);
+			name = CustomeView;
+			sourceTree = "<group>";
+		};
+		AE9345B21CA466CA00DFD341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE9345AC1CA402EF00DFD341 /* AKTimer.h */,
+				AE9345AD1CA402EF00DFD341 /* AKTimer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE93456E1CA3CA0500DFD341 /* TETSHMXIB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9345861CA3CA0500DFD341 /* Build configuration list for PBXNativeTarget "TETSHMXIB" */;
+			buildPhases = (
+				AE93456B1CA3CA0500DFD341 /* Sources */,
+				AE93456C1CA3CA0500DFD341 /* Frameworks */,
+				AE93456D1CA3CA0500DFD341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TETSHMXIB;
+			productName = TETSHMXIB;
+			productReference = AE93456F1CA3CA0500DFD341 /* ak timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE9345671CA3CA0500DFD341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AntonKorolev;
+				TargetAttributes = {
+					AE93456E1CA3CA0500DFD341 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AE93456A1CA3CA0500DFD341 /* Build configuration list for PBXProject "TETSHMXIB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9345661CA3CA0500DFD341;
+			productRefGroup = AE9345701CA3CA0500DFD341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE93456E1CA3CA0500DFD341 /* TETSHMXIB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE93456D1CA3CA0500DFD341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE93459A1CA3E69500DFD341 /* ExamleView.xib in Resources */,
+				AE9345941CA3E18400DFD341 /* MainView.xib in Resources */,
+				AE93457F1CA3CA0500DFD341 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE93456B1CA3CA0500DFD341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9345AE1CA402EF00DFD341 /* AKTimer.m in Sources */,
+				AE9345911CA3DB5500DFD341 /* AKTimerLabel.m in Sources */,
+				AE93459D1CA3E6CD00DFD341 /* AKExempleController.m in Sources */,
+				AE9345B11CA462F400DFD341 /* AKAdditionButton.m in Sources */,
+				AE9345771CA3CA0500DFD341 /* AppDelegate.m in Sources */,
+				AE9345741CA3CA0500DFD341 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE9345921CA3E18400DFD341 /* MainView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9345931CA3E18400DFD341 /* Base */,
+			);
+			name = MainView.xib;
+			sourceTree = "<group>";
+		};
+		AE9345981CA3E69500DFD341 /* ExamleView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9345991CA3E69500DFD341 /* Base */,
+			);
+			name = ExamleView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE9345841CA3CA0500DFD341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE9345851CA3CA0500DFD341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE9345871CA3CA0500DFD341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TETSHMXIB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anton.Korolev.TETSHMXIB;
+				PRODUCT_NAME = "ak timer";
+			};
+			name = Debug;
+		};
+		AE9345881CA3CA0500DFD341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TETSHMXIB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anton.Korolev.TETSHMXIB;
+				PRODUCT_NAME = "ak timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE93456A1CA3CA0500DFD341 /* Build configuration list for PBXProject "TETSHMXIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9345841CA3CA0500DFD341 /* Debug */,
+				AE9345851CA3CA0500DFD341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9345861CA3CA0500DFD341 /* Build configuration list for PBXNativeTarget "TETSHMXIB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9345871CA3CA0500DFD341 /* Debug */,
+				AE9345881CA3CA0500DFD341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE9345671CA3CA0500DFD341 /* Project object */;
+}
