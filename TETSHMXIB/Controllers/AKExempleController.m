@@ -10,6 +10,9 @@
 #import "AKTimer.h"
 #import "AKAdditionButton.h"
 
+#define kAdditionGroupTimer_1 @"CDTimer"
+#define kAdditionGroupTimer_2 @"SWTimer"
+
 @interface AKExempleController () <AKTimerLabelDelegate>
 
 
@@ -29,8 +32,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    _timer_1 = [[AKTimer alloc] initWithTimerType:AKTimerTypeTimer];
+    
+    _timer_1 = [[AKTimer alloc] initWithTimerType:AKTimerTypeCountDown];
     _timer_1.delegate = self;
     [_timer_1 setCountDownTime:33];
 
@@ -103,11 +106,11 @@
 }
 
 - (IBAction)addAdditionalTime:(AKAdditionButton *)sender {
-    if ([sender.identifier isEqualToString:@"CDTimer"]) {
+    if ([sender.identifier isEqualToString:kAdditionGroupTimer_1]) {
         [_timer_1 addTimeCounted:sender.tag];
     }
     
-    if ([sender.identifier isEqualToString:@"SWTimer"]) {
+    if ([sender.identifier isEqualToString:kAdditionGroupTimer_2]) {
         [_timer_2 addTimeCounted:sender.tag];
     }
     

@@ -8,10 +8,9 @@
 
 #import "AKTimer.h"
 
-#define XIB_NAME @"AKTimerView"
 #define kDefaultTimeFormat @"HH:mm:ss"
-#define kDefaultFireIntervalNormal  0.1
-#define kDefaultFireIntervalHighUse  0.01
+#define kDefaultSpeedTimerNormal   0.1
+#define kDefaultSpeedTimerHighUse  0.01
 
 @interface AKTimer (){
 
@@ -27,8 +26,6 @@
 
 - (void) setup;
 - (void) update;
-- (void) updateStopWatch:(NSTimeInterval) timeRemaining andTimeToShow:(NSDate *) dateRemaining;
-- (void) updateTimer:(NSTimeInterval) timeRemaining andTimeToShow:(NSDate *) dateRemaining;
 
 @end
 
@@ -103,11 +100,10 @@
         _timer = nil;
     }
     
-    if ( [self.timeFormat rangeOfString:@"SS"].location != NSNotFound ) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:kDefaultFireIntervalHighUse target:self selector:@selector(update) userInfo:nil repeats:YES];
-    }else {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:kDefaultFireIntervalNormal target:self selector:@selector(update) userInfo:nil repeats:YES];
-    }
+    BOOL timeFormatLocalSS    = ( [self.timeFormat rangeOfString:@"SS"].location != NSNotFound );
+    NSTimeInterval speedTimer = timeFormatLocalSS ? kDefaultSpeedTimerHighUse : kDefaultSpeedTimerNormal;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:speedTimer target:self selector:@selector(update) userInfo:nil repeats:YES];
+    
     
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     
@@ -154,7 +150,7 @@
             [self updateStopWatch:timeRemaining andTimeToShow:[NSDate date]];
             break;
 
-        case AKTimerTypeTimer:
+        case AKTimerTypeCountDown:
             [self updateTimer:timeRemaining andTimeToShow:[NSDate date]];
             break;
             

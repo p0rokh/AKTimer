@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+/*********************
+    Timer type
+    For the countdown timer, you must specify the runtime.
+ **********************/
+
 typedef enum {
     AKTimerTypeStopWatch,
-    AKTimerTypeTimer,
+    AKTimerTypeCountDown,
 } AKTimerType;
 
 
@@ -22,7 +27,11 @@ typedef enum {
 @protocol AKTimerLabelDelegate <NSObject>
 
 @optional
+
+/* If you need to keep track of the timer, implement this method delegate. */
 -(void) timer:(AKTimer *)timer countingTo:(NSTimeInterval)time textToDisplayAtTime:(NSString* )timeText timertype:(AKTimerType)timerType;
+
+/* Use this method delegate to implement the logic of your application, if you use a timer with a countdown type. */
 -(void) timer:(AKTimer *)timer finshedTimer:(NSTimeInterval)time;
 
 @end
@@ -35,12 +44,14 @@ typedef enum {
 
 @property (nonatomic,weak) id<AKTimerLabelDelegate> delegate;
 
+/*Format text output using DateFormat. The default value is set to "HH: bb: SS".
+ Options for viewing formats can be here "http://www.codingexplorer.com/swiftly-getting-human-readable-date-nsdateformatter/"*/
 @property (nonatomic,copy) NSString *timeFormat;
 
 @property (assign) AKTimerType timerType;
 
+/* Timer status */
 @property (assign,readonly) BOOL counting;
-
 
 /* Init methods */
 - (id) initWithTimerType:(AKTimerType) type;
@@ -52,7 +63,6 @@ typedef enum {
 - (void) reset;
 
 /* Setter method */
-
 - (void) setCountDownTime:(NSTimeInterval)time;
 - (void) addTimeCounted:(NSTimeInterval)time;
 
