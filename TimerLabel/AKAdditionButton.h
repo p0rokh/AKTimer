@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AKAdditionButton : UIButton
-@property (strong, nonatomic) NSString* identifier;
+@property (weak, nonatomic) NSString* identifier;
 @end
